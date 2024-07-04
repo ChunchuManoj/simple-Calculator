@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgba(0, 128, 109, 0.554), rgb(0, 128, 255) 130%);
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 40px;
+    border-radius: 20px;
+    z-index: 3;
+    box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.323),0 0 5px 5px rgba(255, 255, 255, 0.239);
+}
+
+#buttons{
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 340px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+}
+button,#submit{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.302);
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    transition: all .5s linear ;
+    }
+    button:active{
+    background-color: rgb(0, 0, 0);
+    scale: 1.2;
+
+}
+#display{
+    background-color: transparent;
+    width: 190px;
+    height: 50px;
+    color: white;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#display:focus{
+    outline: none;
+}
